@@ -4,40 +4,38 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do List</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Roboto+Mono:ital,wght@1,200&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="todo-list">
-      <!-- App Title -->
-      <div class="todo-list-title"><h1>To-Do List</h1></div>
 
-      <!-- App Body -->
-      <div class="todo-list-body">
-        <!-- Prompt the user to enter a task -->
-        <div class="todo-enter-task">
-          <input
-            class="txt-enter"
-            id="task"
-            type="text"
-            placeholder="Enter your task"
-          />
-          <input class="btn-add" id="add" type="button" value="Add" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&family=Roboto+Mono:ital,wght@1,200&family=Roboto:wght@100&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-        <!-- <div class="todo-select-category"> -->
-        <!-- Prompt the user to choose a category for the task -->
-        <!-- 
+<body>
+  <div class="todo-list">
+    <!-- App Title -->
+    <div class="todo-list-title">
+      <h1>To-Do List</h1>
+    </div>
+
+    <!-- App Body -->
+    <div class="todo-list-body">
+      <!-- Prompt the user to enter a task -->
+      <form class="todo-enter-task">
+        <input class="txt-enter" id="task" type="text" placeholder="Enter your task" />
+        <input class="btn-add" id="add" type="button" value="+" />
+      </form>
+
+      <!-- <div class="todo-select-category"> -->
+      <!-- Prompt the user to choose a category for the task -->
+      <!-- 
           <select class="task-category">
             <option value="">Choose a category</option>
             <option value="1">Learning</option>
@@ -47,12 +45,18 @@
             <option value="5">Mind Care</option>
             <option value="6">Other</option>
           </select> -->
-        <!-- </div> -->
+      <!-- </div> -->
 
-        <!-- Show saved tasks -->
-        <div class="todo-list-content">Content</div>
+      <!-- Show saved tasks -->
+      <div class="todo-list-content" id="todo-list-content">
+        <div class="list-item">
+          <button>X</button>
+          <p>Content</p>
+        </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
