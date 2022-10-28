@@ -6,13 +6,8 @@
 // Initialize a task array
 let taskArr = JSON.parse(localStorage.getItem('tasks')) || [];
 let listContent = document.getElementById('todo-list-content');
-let btn = document.getElementById('add');
-btn.addEventListener('click', createTask);
 
-createTask = (e) => {
-    // Prevent the form from submitting
-    e.preventDefault();
-
+createTask = () => {
     // Save input into task array
     let taskInput = document.getElementById('task').value;
     taskArr.push(taskInput);
@@ -20,7 +15,7 @@ createTask = (e) => {
     let len = taskArr.length;
 
     // Get array value from localStorage and display on the index page
-    // for (let i = 0; i < taskArr.length; i++) {
+
     let taskDiv = document.createElement('div');
     let taskItem = document.createElement('p');
     taskItem.textContent = taskArr[len - 1];
