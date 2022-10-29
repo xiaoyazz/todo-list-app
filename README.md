@@ -3,7 +3,7 @@
 - A to-do list app using localStorage
 - View, add, delete tasks
 - Clear the whole task list
-- Will add modal for "Clear the list" button 🚧
+- Will add a confirmation modal for "Clear the list" button 🚧
 - Will add categories for tasks 🚧
 - Developed with HTML, CSS, and Javascript
 - Designed & created by Xiaoya Zou on Oct 27, 2022
