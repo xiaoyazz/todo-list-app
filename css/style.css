@@ -8,7 +8,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #f6fff8;
+    background-color: #ebebeb;
+    opacity: 0.7;
+    background-image:  linear-gradient(#cfcfcf 1px, transparent 1px), linear-gradient(to right, #cfcfcf 1px, #ebebeb 1px);
+    background-size: 20px 20px;
     height: 100vh;
     overflow: hidden;
 }
@@ -25,7 +28,7 @@ body {
 .todo-list-title h1 {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 60px;
-    color: #619b8a;
+    color: #2f96c3;
     text-align: center;
     padding: 30px;
 }
@@ -36,41 +39,41 @@ body {
 }
 
 .txt-enter {
-    width: 80%;
+    width: 88%;
     padding: 5px 10px;
     height: 40px;
     font-size: 16px;
-    border: 2px solid #619b8a;
+    border: 2px solid #2f96c3;
     background: #fff;
     color: #495867;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .txt-enter:focus {
     box-shadow: 0 0 6px #07beb8;
-    border: 0.5px solid #619b8a;
+    border: 0.5px solid #2f96c3;
 }
 
-input[type="button"] {
+.btn-add {
     float: right;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: -5px;
+    margin-left: -6px;
     width: 53px;
-    padding: 5px 10px;
-    height: 53px;
+    padding: 5px 20px;
+    height: 54px;
     border: none;
     font-size: 22px;
     font-weight: 600;
     color: #fff;
-    background: #ffd670;
+    background: #2f96c3;
     border-radius: 5px;
     cursor: pointer;
 }
 
-input[type="button"]:hover {
-    background: #ffc857;
+.btn-add:hover {
+    background: #277da1;
 }
 
 /* .task-category {
@@ -86,37 +89,86 @@ input[type="button"]:hover {
 
 .todo-list-content {
     font-size: 16px;
-    font-weight: 400;
-    color: #495867;
+    font-weight: 600;
+    color: #3c3c3c;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .list-item {
     width: 98%;
-    height: 50px;
-    padding: 10px;
+    padding: 20px 0 0 10px;
+    height: 40px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
+    background: #fff;
     margin-bottom: 20px;
-}
-
-.list-item:hover {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
-button {
+.btn-delete {
     float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-    width: 40px;
-    padding: 5px 10px;
+    background: #fff;
+    color:#ff595e;
+    margin-left: -6px;
+    margin-top: -10px;
+    font-size: 22px;
+    width: 53px;
+    padding: 5px 20px;
     height: 40px;
     border: none;
-    font-size: 16px;
+    cursor: pointer;
+}
+
+    .btn-delete:hover{
+        color: #c23338;
+    }
+
+.btn-complete {
+    float: right;
+    background: #fff;
+    color:#43aa8b;
+    margin-left: -12px;
+    margin-top: -10px;
+    font-size: 22px;
+    width: 53px;
+    padding: 5px 20px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn-complete:hover{
+        color: #308a6f;
+    }
+
+/* .list-item:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+} */
+
+.btn-clear {
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
-    background: #f28482;
+    background: #9478a7;
     border-radius: 5px;
     cursor: pointer;
+}
+
+    .btn-clear:hover{
+        background: #633780;
+    }
+
+div > h4 {
+    color: #3c3c3c;
+    text-align: center;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }

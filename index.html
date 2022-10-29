@@ -35,13 +35,16 @@
             type="text"
             placeholder="Enter your task"
           />
-          <input
+          <!-- <input
             class="btn-add"
             id="add"
             type="button"
             value="Add"
             onclick="createTask()"
-          />
+          /> -->
+          <button class="btn-add" onclick="createTask()">
+            <i class="fa-solid fa-plus-large">+</i>
+          </button>
         </form>
 
         <!-- <div class="todo-select-category"> -->
@@ -59,14 +62,21 @@
         <!-- </div> -->
 
         <!-- Show saved tasks -->
-        <div class="todo-list-content" id="todo-list-content">
-          <!-- <div class="list-item">
-          <button>X</button>
-          <p>Content</p>
-        </div> -->
-        </div>
+        <div class="todo-list-content" id="todo-list-content"></div>
       </div>
+
+      <!-- Clear the list -->
+      <div>
+        <button class="btn-clear" onclick="clearList()">Clear the list</button>
+      </div>
+
+      <!-- Footer -->
+      <div><h4>Created by Xiaoya Zou 📝</h4></div>
     </div>
+    <script
+      src="https://kit.fontawesome.com/0e6a7ceb8d.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
   </body>
 </html>
