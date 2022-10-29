@@ -4,7 +4,7 @@
 - View, add, delete tasks
 - Clear the whole task list
 - Developed with HTML, CSS, and Javascript
-- Created by Xiaoya Zou on Oct 27, 2022
+- Designed & created by Xiaoya Zou on Oct 27, 2022
 - Try it out:) https://xiaoyazz.github.io/todo-list-app/
 
 <img width="600" src="https://user-images.githubusercontent.com/84748829/198783034-ba9d94d1-78d6-44c5-aba0-2a50fdd06860.JPG">
