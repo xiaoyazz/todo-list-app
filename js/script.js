@@ -32,6 +32,7 @@ loadData = () => {
         btnComplete.classList.add('btn-complete');
         btnComplete.addEventListener('click', function () {
             p.style.textDecoration = 'line-through 2px'; // Need to be updated. Currently the text decoration will disapear after page reload
+            p.style.color = '#43aa8b';
         })
 
         //console.log(taskArr[i]);
